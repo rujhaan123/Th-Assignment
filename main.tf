@@ -45,6 +45,7 @@ resource "google_compute_instance" "default" {
   name         = "md-vm"
   machine_type = "e2-medium"
   zone         = "us-west1-a"
+  tags         = ["externalssh", "webserver"]
 
   boot_disk {
     initialize_params {
