@@ -5,8 +5,8 @@ provider "google" {
 }
 
 resource "google_compute_firewall" "firewall" {
-  name    = google_compute_network.vpc_network.name
-  network = "default"
+  name    = "new-firewall-externalssh"
+  network = google_compute_network.vpc_network.name
 
   allow {
     protocol = "tcp"
