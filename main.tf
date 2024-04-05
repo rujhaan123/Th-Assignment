@@ -40,7 +40,6 @@ resource "google_compute_address" "static" {
   depends_on = [google_compute_firewall.firewall]
 }
 
-
 resource "google_compute_instance" "default" {
   name         = "md-vm"
   machine_type = "e2-medium"
@@ -62,13 +61,23 @@ resource "google_compute_instance" "default" {
     }
   }
 
-  depends_on = [google_compute_firewall.firewall]
+  metadata = {
+    ssh-keys = "${var.user}:${var.public_key}"
+  }
 
-  /*service_account {
-    email  = var.email
-    scopes = ["compute-ro"]
-  }*/
-  
+  provisioner "remote-exec" {
+    inline = [
+      "export MYSQL_USER='${var.MYSQL_USER}'",
+      "export MYSQL_PASSWORD='${var.MYSQL_PASSWORD}'",
+      "curl -o /tmp/mediawiki.sh https://raw.githubusercontent.com/rujhaan123/Th-Assignment/main/mediawiki.sh", # Download the script from GitHub
+      "chmod +x /tmp/mediawiki.sh", # Make the script executable
+      "sudo /tmp/mediawiki.sh" # Run the script as root
+    ]
+  }
+
+  depends_on = [google_compute_firewall.firewall]
+}
+
   metadata = {
     ssh-keys = "${var.user}:${var.public_key}"
   }
