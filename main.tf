@@ -77,8 +77,3 @@ resource "google_compute_instance" "default" {
 
   depends_on = [google_compute_firewall.firewall]
 }
-
-  metadata = {
-    ssh-keys = "${var.user}:${var.public_key}"
-  }
-}
