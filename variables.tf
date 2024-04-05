@@ -22,3 +22,11 @@ variable "user" {
 variable "public_key" {
   type    = string
 }
+
+variable "MYSQL_USER" {
+  type    = string
+}
+
+variable "MYSQL_PASSWORD" {
+  type    = string
+}
