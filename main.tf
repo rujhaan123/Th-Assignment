@@ -73,6 +73,12 @@ resource "google_compute_instance" "default" {
       "chmod +x /tmp/mediawiki.sh", # Make the script executable
       "sudo /tmp/mediawiki.sh" # Run the script as root
     ]
+    connection {
+      type        = "ssh"
+      user        = var.user
+      private_key = var.private_key
+      host        = google_compute_instance.default.network_interface[0].access_config[0].nat_ip
+    }
   }
 
   depends_on = [google_compute_firewall.firewall]
