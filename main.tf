@@ -10,11 +10,11 @@ resource "google_compute_firewall" "firewall" {
 
   allow {
     protocol = "tcp"
-    ports    = ["22","443"]
+    ports    = ["22","443","80"]
   }
 
-  source_ranges = ["0.0.0.0/0"] # Not So Secure. Limit the Source Range
-  target_tags   = ["externalssh"]
+  source_ranges = ["106.215.61.171/32"] # Not So Secure. Limit the Source Range
+  target_tags   = ["externalssh",""webserver"]
 }
 
 resource "google_compute_network" "vpc_network" {
