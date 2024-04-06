@@ -14,7 +14,7 @@ resource "google_compute_firewall" "firewall" {
   }
 
   source_ranges = ["106.215.61.171/32"] # Not So Secure. Limit the Source Range
-  target_tags   = ["externalssh",""webserver"]
+  target_tags   = ["externalssh","webserver"]
 }
 
 resource "google_compute_network" "vpc_network" {
