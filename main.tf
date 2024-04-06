@@ -14,7 +14,7 @@ resource "google_compute_firewall" "firewall" {
   }
 
   source_ranges = ["106.215.61.171/32"] # Not So Secure. Limit the Source Range
-  target_tags   = ["externalssh","webserver","http-server"]
+  target_tags   = ["externalssh","http-server"]
 }
 
 resource "google_compute_network" "vpc_network" {
@@ -44,7 +44,7 @@ resource "google_compute_instance" "default" {
   name         = "md-vm"
   machine_type = "e2-medium"
   zone         = "us-west1-a"
-  tags         = ["externalssh", "webserver"]
+  tags         = ["externalssh", "http-server"]
 
   boot_disk {
     initialize_params {
