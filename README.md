@@ -30,6 +30,12 @@ By automating the deployment process, we aim to minimize manual intervention, re
 
    ![image](https://github.com/rujhaan123/Th-Assignment/assets/33410430/bdb038ac-6270-4197-9eda-250559acf084)
 
+   ![image](https://github.com/rujhaan123/Th-Assignment/assets/33410430/4dc8312a-c870-407a-befa-49aaaf4c8b64)
+
+   ![image](https://github.com/rujhaan123/Th-Assignment/assets/33410430/4c94614e-de7e-4e91-b5cf-c8b811d2a0b1)
+
+
+
 
 
 
