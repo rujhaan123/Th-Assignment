@@ -35,10 +35,15 @@ By automating the deployment process, we aim to minimize manual intervention, re
    ![image](https://github.com/rujhaan123/Th-Assignment/assets/33410430/4c94614e-de7e-4e91-b5cf-c8b811d2a0b1)
 
    ![image](https://github.com/rujhaan123/Th-Assignment/assets/33410430/69785a9b-c350-41b2-8c06-7c32099849df)
+   
 
    ![image](https://github.com/rujhaan123/Th-Assignment/assets/33410430/7dd1005e-265e-47d6-8c71-244c79874e12)
 
 ### Note
+- We have chosen to use Terraform Cloud for managing our state file and orchestrating our cloud deployment. This choice is particularly advantageous when working in a team environment as it provides a centralized, version-controlled, and secure location for state files. However, it’s worth noting that these tasks can also be performed directly from a local machine.
+- Our automation process is designed to trigger whenever a commit is made to the GitHub repository. This setup ensures that our infrastructure stays up-to-date with the latest configurations. Additionally, for those interested in setting up a continuous integration/continuous deployment (CI/CD) process for managing builds and deployments, an API-driven workflow can also be implemented.
+- We have utilized a Bash script to automate the installation of Mediawiki on our Linux VM. For scaling this setup across multiple VMs, other configuration management tools such as Ansible can be employed.
+- The same application configuration can also be deployed on a Kubernetes cluster if required. Instead of provisioning a VM, we can deploy a Kubernetes cluster using Terraform and run Mediawiki using a container image.
 
 
 
