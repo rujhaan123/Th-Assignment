@@ -13,7 +13,7 @@ resource "google_compute_firewall" "firewall" {
     ports    = ["22","443","80"]
   }
 
-  source_ranges = ["122.161.206.247/32"] # Limiting the source range
+  source_ranges = ["0.0.0.0/0"] # Limiting the source range
   target_tags   = ["externalssh","http-server"]
 }
 
