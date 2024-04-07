@@ -16,4 +16,9 @@ In this project, we utilize a variety of tools and technologies, which also serv
 By automating the deployment process, we aim to minimize manual intervention, reduce errors, and ensure a consistent and reliable setup of Mediawiki.
 
 ## Installation and Running the Automation
-1. Terraform
+1. We need to setup our project and workspace in terraform cloud. Below link can be followed.
+   https://developer.hashicorp.com/terraform/tutorials/cloud/projects
+2.Once the project and wokspace is setup we need to link workspace with our github repo. For this project we have use VCS driven workflow but as per the requirement API driven and CLI driven workflow can also be used. Below link can be followed for setup.
+  https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-vcs-change
+3. 
+
