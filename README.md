@@ -8,10 +8,10 @@ To ensure efficient management and version control of our Terraform deployments,
 
 In this project, we utilize a variety of tools and technologies, which also serve as prerequisites, essential for executing the automation process:
 
-- GIT: Used for version control and source code management.
-- Terraform Cloud: Provides a consistent workflow for managing and versioning our Terraform infrastructure.
-- Google Cloud Platform (GCP): Our chosen cloud provider where the server is provisioned.
-- Bash: Used to automate the server configuration process, specifically for setting up the LAMP stack.
+- **GIT:** Used for version control and source code management.
+- **Terraform Cloud:** Provides a consistent workflow for managing and versioning our Terraform infrastructure.
+- **Google Cloud Platform (GCP):** Our chosen cloud provider where the server is provisioned.
+- **Bash:** Used to automate the server configuration process, specifically for setting up the LAMP stack.
 
 By automating the deployment process, we aim to minimize manual intervention, reduce errors, and ensure a consistent and reliable setup of Mediawiki.
 
@@ -22,7 +22,7 @@ By automating the deployment process, we aim to minimize manual intervention, re
 2. Once the project and wokspace is setup we need to link workspace with our github repo. For this project we have use VCS driven workflow but as per the requirement API driven and CLI driven workflow can also be used. Below link can be followed for setup.
   https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-vcs-change
   
-3. Once the workspace is ready and linked with your repository, you are all set for the infrastructure deployment. With every commit made to the main.tf file in your repository, Terraform will automatically execute a plan and apply in the cloud workspace. This ensures that your infrastructure stays up-to-date with your latest configurations
+3. Once the workspace is ready and linked with your repository, you are all set for the infrastructure deployment. With every commit made to the repo, Terraform will automatically execute a plan and apply in the cloud workspace. This ensures that your infrastructure stays up-to-date with your latest configurations
 
-4. Below are the screenshots de
+4.In addition to automating infrastructure deployment, we are also leveraging Terraform Cloud for efficient management of our variables and state files. This approach ensures a centralized, secure, and version-controlled storage for our Terraform state files, while also providing a convenient way to manage and update our variables. Please refer to the screenshots below for a visual reference of our setup
 
