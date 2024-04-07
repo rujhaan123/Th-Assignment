@@ -16,11 +16,13 @@ In this project, we utilize a variety of tools and technologies, which also serv
 By automating the deployment process, we aim to minimize manual intervention, reduce errors, and ensure a consistent and reliable setup of Mediawiki.
 
 ## Installation and Running the Automation
-1. We need to setup our project and workspace in terraform cloud. Below link can be followed.
+1. The first step involves setting up your project and workspace in Terraform Cloud. This is a crucial step as it lays the groundwork for your infrastructure deployment. You can follow the instructions provided in this Terraform Cloud Projects Tutorial.
    https://developer.hashicorp.com/terraform/tutorials/cloud/projects
    
 2. Once the project and wokspace is setup we need to link workspace with our github repo. For this project we have use VCS driven workflow but as per the requirement API driven and CLI driven workflow can also be used. Below link can be followed for setup.
   https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-vcs-change
   
-3. k
+3. Once the workspace is ready and linked with your repository, you are all set for the infrastructure deployment. With every commit made to the main.tf file in your repository, Terraform will automatically execute a plan and apply in the cloud workspace. This ensures that your infrastructure stays up-to-date with your latest configurations
+
+4. Below are the screenshots de
 
