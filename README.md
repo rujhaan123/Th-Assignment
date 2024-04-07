@@ -24,5 +24,5 @@ By automating the deployment process, we aim to minimize manual intervention, re
   
 3. Once the workspace is ready and linked with your repository, you are all set for the infrastructure deployment. With every commit made to the repo, Terraform will automatically execute a plan and apply in the cloud workspace. This ensures that your infrastructure stays up-to-date with your latest configurations
 
-4.In addition to automating infrastructure deployment, we are also leveraging Terraform Cloud for efficient management of our variables and state files. This approach ensures a centralized, secure, and version-controlled storage for our Terraform state files, while also providing a convenient way to manage and update our variables. Please refer to the screenshots below for a visual reference of our setup
+4. In addition to automating infrastructure deployment, we are also leveraging Terraform Cloud for efficient management of our variables and state files. This approach ensures a centralized, secure, and version-controlled storage for our Terraform state files, while also providing a convenient way to manage and update our variables. Please refer to the screenshots below for a visual reference of our setup.
 
