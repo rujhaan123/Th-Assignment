@@ -33,3 +33,4 @@ variable "MYSQL_USER" {
 variable "MYSQL_PASSWORD" {
   type    = string
 }
+
