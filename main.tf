@@ -13,6 +13,10 @@ resource "google_compute_firewall" "firewall" {
     ports    = ["22","443","80"]
   }
 
+  allow {
+    protocol = "icmp"
+  }
+
   source_ranges = ["0.0.0.0/0"] # Limiting the source range
   target_tags   = ["externalssh","http-server"]
 }
